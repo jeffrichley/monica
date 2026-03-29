@@ -1002,6 +1002,7 @@ async function main() {
 
   const html = buildPage(sections);
   await fs.writeFile(path.join(DIST, "index.html"), html, "utf8");
+  await fs.writeFile(path.join(DIST, ".nojekyll"), "", "utf8");
   console.log("Wrote dist/index.html (" + sections.length + " section(s))");
 }
 
