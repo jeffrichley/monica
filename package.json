@@ -1,0 +1,12 @@
+{
+  "name": "static-site-maker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "npx --yes serve dist -p 3333"
+  },
+  "dependencies": {
+    "yaml": "^2.6.1"
+  }
+}

@@ -1,0 +1,13 @@
+# question doubles as the sentence stem when sentence_stem is omitted
+order: 10
+category: Personal
+id: favorite-foods
+title: Favorite foods
+question: "My favorite foods for $name$ are"
+options:
+  - id: pizza
+    label: pizza
+  - id: mexican
+    label: mexican
+  - id: licorice
+    label: black licorice
