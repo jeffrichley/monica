@@ -1,0 +1,19 @@
+order: 80
+category: Interventions
+id: interventions-behavior-mod
+title: "Behavior Modifications"
+question: "Select all behavior modifications that apply."
+sentence_stem: "Behavior modifications have included"
+options:
+  - id: pos-reinforcement
+    label: positive reinforcement for appropriate behaviors
+  - id: behavior-charts
+    label: behavior charts or daily report cards
+  - id: task-breakdown
+    label: breaking tasks into smaller, manageable parts
+  - id: movement-breaks
+    label: frequent movement or sensory breaks
+  - id: verbal-reminders
+    label: verbal reminders and redirection
+  - id: structured-routines
+    label: structured routines and clear transitions

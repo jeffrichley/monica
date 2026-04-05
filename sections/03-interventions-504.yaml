@@ -1,0 +1,19 @@
+order: 30
+category: Interventions
+id: interventions-504
+title: "504 Plan"
+question: "Select all 504 plan accommodations that apply."
+sentence_stem: "The student's 504 plan has included"
+options:
+  - id: ext-time
+    label: extended time on tests and assignments
+  - id: pref-seating
+    label: preferential seating
+  - id: breaks
+    label: breaks during instruction or testing
+  - id: reduced-assign
+    label: reduced assignment length without reducing content
+  - id: org-tools
+    label: use of organizational tools (checklists, planners)
+  - id: small-group-test
+    label: small group or separate setting for testing

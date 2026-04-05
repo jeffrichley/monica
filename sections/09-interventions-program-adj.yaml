@@ -1,0 +1,19 @@
+order: 90
+category: Interventions
+id: interventions-program-adj
+title: "Program Adjustments"
+question: "Select all program adjustments that apply."
+sentence_stem: "Program adjustments have included"
+options:
+  - id: modified-assign
+    label: modified assignments (reduced workload, simplified directions)
+  - id: adjusted-pacing
+    label: adjusted pacing of instruction
+  - id: alt-methods
+    label: alternative methods to demonstrate understanding (oral responses, projects)
+  - id: assistive-tech
+    label: use of assistive technology (e.g., text-to-speech, speech-to-text)
+  - id: adult-support
+    label: additional adult support in the classroom
+  - id: flex-scheduling
+    label: flexible scheduling or modified daily routines

@@ -1,0 +1,17 @@
+order: 70
+category: Interventions
+id: interventions-remedial
+title: "Remedial Programs"
+question: "Select all remedial programs that apply."
+sentence_stem: "Remedial programs have included"
+options:
+  - id: reading-intervention
+    label: participation in reading intervention programs (e.g., phonics-based instruction)
+  - id: math-intervention
+    label: math intervention groups targeting foundational skills
+  - id: tier-intervention
+    label: Tier 2 or Tier 3 intervention services
+  - id: after-school
+    label: after-school or summer remediation programs
+  - id: intervention-curricula
+    label: use of intervention curricula targeting specific deficits

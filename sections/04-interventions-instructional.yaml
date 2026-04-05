@@ -1,0 +1,19 @@
+order: 40
+category: Interventions
+id: interventions-instructional
+title: "Instructional Support"
+question: "Select all instructional support strategies that apply."
+sentence_stem: "Instructional support has included"
+options:
+  - id: small-group-instr
+    label: small group instruction for reading and/or math
+  - id: reteach
+    label: re-teaching of skills using different strategies
+  - id: guided-practice
+    label: guided practice with teacher support
+  - id: visual-aids
+    label: use of visual aids, manipulatives, or graphic organizers
+  - id: checks-understanding
+    label: frequent checks for understanding
+  - id: explicit-instr
+    label: explicit, step-by-step instruction and modeling

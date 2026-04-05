@@ -1,0 +1,49 @@
+order: 110
+category: SDI
+id: sdi-areas
+title: "Specially Designed Instruction Areas"
+question: "Select all areas requiring specially designed instruction."
+sentence_stem: "$name$ requires specially designed instruction in the areas of"
+options:
+  - id: task-completion
+    label: task completion
+  - id: attention-to-task
+    label: attention to task
+  - id: emotional-regulation
+    label: emotional regulation
+  - id: executive-functioning
+    label: executive functioning
+  - id: organization
+    label: organization
+  - id: self-monitoring
+    label: self-monitoring
+  - id: task-initiation
+    label: task initiation
+  - id: time-management
+    label: time management
+  - id: impulse-control
+    label: impulse control
+  - id: compliance
+    label: compliance with adult direction
+  - id: functional-comm
+    label: functional communication
+  - id: reading-decoding
+    label: reading (decoding)
+  - id: reading-fluency
+    label: reading (fluency)
+  - id: reading-comprehension
+    label: reading (comprehension)
+  - id: written-expression
+    label: written expression
+  - id: mathematics
+    label: mathematics (calculation and problem solving)
+  - id: attention
+    label: attention
+  - id: self-regulation
+    label: self-regulation
+  - id: social-skills
+    label: social skills
+  - id: expressive-comm
+    label: expressive communication
+  - id: receptive-language
+    label: receptive language

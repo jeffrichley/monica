@@ -1,0 +1,19 @@
+order: 50
+category: Interventions
+id: interventions-bip
+title: "Behavior Intervention Plan"
+question: "Select all BIP components that apply."
+sentence_stem: "The behavior intervention plan has included"
+options:
+  - id: daily-goals
+    label: daily behavior goals with monitoring
+  - id: reinforcement
+    label: reinforcement system
+  - id: sched-breaks
+    label: scheduled breaks or cool-down area
+  - id: replacement-behaviors
+    label: teaching replacement behaviors
+  - id: clear-expectations
+    label: clear expectations and consistent consequences
+  - id: school-home-comm
+    label: regular communication between school and home

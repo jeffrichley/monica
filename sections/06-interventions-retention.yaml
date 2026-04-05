@@ -1,0 +1,13 @@
+order: 60
+category: Interventions
+id: interventions-retention
+title: "Retention"
+question: "Select all retention-related supports that apply."
+sentence_stem: "Retention supports have included"
+options:
+  - id: repeated-grade
+    label: student repeated a grade to strengthen foundational academic skills
+  - id: added-time
+    label: additional time provided to develop reading, math, or social skills
+  - id: grade-level-exposure
+    label: continued exposure to grade-level standards with added support

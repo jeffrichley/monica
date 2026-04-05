@@ -1,0 +1,19 @@
+order: 100
+category: Interventions
+id: interventions-estat
+title: "ESTAT / MTSS"
+question: "Select all ESTAT/MTSS supports that apply."
+sentence_stem: "ESTAT/MTSS supports have included"
+options:
+  - id: tiered-support
+    label: tiered intervention support (Tier 1, Tier 2, Tier 3)
+  - id: data-collection
+    label: data collection and progress monitoring (e.g., weekly probes, graphs)
+  - id: problem-solving-team
+    label: problem-solving team meetings to review student progress
+  - id: targeted-interventions
+    label: targeted interventions in reading, math, or behavior
+  - id: adjust-interventions
+    label: adjustments to interventions based on student response
+  - id: collaboration
+    label: collaboration among teachers, specialists, and support staff
