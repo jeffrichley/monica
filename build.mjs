@@ -896,6 +896,7 @@ function buildPage(sections) {
         var tfWrap = document.createElement("div");
         tfWrap.className = "text-fields";
         sec.text_fields.forEach(function (tf) {
+          var capturedId = sec.id;
           var row = document.createElement("div");
           row.className = "text-field-row";
           var lbl = document.createElement("span");
@@ -904,9 +905,9 @@ function buildPage(sections) {
           inp.type = "text";
           inp.className = "text-field-input";
           inp.placeholder = tf.placeholder || "";
-          inp.dataset.fieldSection = sec.id;
+          inp.dataset.fieldSection = capturedId;
           inp.dataset.fieldId = tf.id;
-          inp.addEventListener("input", function () { updateSection(sec.id); });
+          inp.addEventListener("input", function () { updateSection(capturedId); });
           row.appendChild(lbl);
           row.appendChild(inp);
           tfWrap.appendChild(row);
