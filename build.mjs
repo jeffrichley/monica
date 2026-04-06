@@ -670,7 +670,7 @@ function buildPage(sections) {
     var sentence;
     // If stem contains $list$, substitute inline; otherwise append at end.
     if (stem.indexOf("$list$") >= 0) {
-      sentence = stem.replace(/\$list\$/g, list) + ".";
+      sentence = stem.split("$list$").join(list) + ".";
     } else if (!stem && !list) {
       sentence = "";
     } else if (!stem && list) {
