@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
+    "test": "node --test test/*.test.mjs",
     "preview": "npx --yes serve dist -p 3333"
   },
   "dependencies": {

@@ -12,7 +12,7 @@ function parseSectionFile(raw) {
   return YAML.parse(raw);
 }
 
-function trimSentenceStem(s) {
+export function trimSentenceStem(s) {
   let t = String(s ?? "").trimEnd();
   while (t.length && (t.endsWith(".") || t.endsWith("…"))) {
     t = t.slice(0, -1).trimEnd();
@@ -20,7 +20,7 @@ function trimSentenceStem(s) {
   return t;
 }
 
-function normalizeSection(data, filename) {
+export function normalizeSection(data, filename) {
   const id =
     data.id ??
     path.basename(filename, path.extname(filename)).replace(/[^a-zA-Z0-9_-]/g, "-");
@@ -1088,7 +1088,10 @@ async function main() {
   console.log("Wrote dist/index.html (" + sections.length + " section(s))");
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+// Only run when executed directly, not when imported by tests.
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
