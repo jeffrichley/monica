@@ -1,0 +1,39 @@
+order: 330
+category: ASD
+id: asd-educational-impact
+title: "Educational Impact"
+question: "Select all areas impacting educational performance."
+sentence_stem: "$name$ has difficulties in the following areas, which impact educational performance"
+options:
+  - id: exec-functioning
+    label: executive functioning skills (organization, planning, task initiation, and work completion)
+  - id: schedule-changes
+    label: unexpected changes to schedule
+  - id: social-skills
+    label: social skills
+  - id: sensory-sensitivity
+    label: sensory sensitivity
+  - id: functional-comm
+    label: functional communication
+  - id: self-regulation
+    label: behavioral/self-regulation skills
+  - id: flexibility
+    label: flexibility and coping with unexpected changes or transitions
+  - id: coping-strategies
+    label: coping strategies
+  - id: social-interaction
+    label: social interaction
+  - id: peer-engagement
+    label: peer engagement skills
+  - id: communication-skills
+    label: communication skills (expressive, receptive)
+  - id: repetitive-behaviors
+    label: repetitive behaviors
+  - id: sensory-processing
+    label: sensory processing and regulation
+  - id: behavioral-skills
+    label: behavioral and self-regulation skills
+  - id: group-activities
+    label: participation in group activities
+  - id: collaborative-learning
+    label: participation in collaborative learning

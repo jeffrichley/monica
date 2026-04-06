@@ -1,0 +1,57 @@
+order: 320
+category: ASD
+id: asd-communication
+title: "Communication"
+question: "Select all atypical communication patterns that apply."
+sentence_stem: "$name$ demonstrates pervasive atypical patterns in communication in the following areas"
+options:
+  - id: delayed-language
+    label: delayed language development
+  - id: limited-verbal
+    label: limited verbal communication
+  - id: limited-spoken
+    label: limited use of spoken language
+  - id: limited-initiation
+    label: limited initiation or maintenance of interactions
+  - id: reciprocal-conv
+    label: difficulty engaging in reciprocal conversation
+  - id: one-word-responses
+    label: tendency to use one-word responses or short phrases rather than expanded language
+  - id: scripted-language
+    label: repetitive or scripted language (e.g., echolalia, use of memorized phrases)
+  - id: atypical-speech
+    label: atypical tone, pitch, or volume of speech (e.g., monotone, overly loud or quiet)
+  - id: open-ended-q
+    label: difficulty answering open-ended questions
+  - id: on-topic
+    label: difficulty staying on topic during conversation
+  - id: excessive-talking
+    label: tendency to talk excessively about preferred topics without regard to listener interest
+  - id: ask-questions
+    label: limited ability to ask questions or seek clarification
+  - id: nonverbal-interp
+    label: difficulty interpreting and using nonverbal communication (e.g., gestures, facial expressions)
+  - id: reduced-gestures
+    label: reduced use of gestures to support communication (e.g., pointing, nodding)
+  - id: figurative-language
+    label: difficulty understanding figurative language (e.g., idioms, sarcasm, humor)
+  - id: literal-interp
+    label: literal interpretation of language
+  - id: multi-step-verbal
+    label: difficulty following multi-step verbal directions
+  - id: receptive-language
+    label: challenges with receptive language (e.g., understanding spoken information)
+  - id: express-needs
+    label: difficulty expressing wants, needs, or ideas clearly
+  - id: repair-breakdown
+    label: limited ability to repair communication breakdowns (e.g., does not rephrase when misunderstood)
+  - id: pretend-play
+    label: difficulty engaging in imaginative or pretend play involving language
+  - id: unusual-phrasing
+    label: unusual phrasing or word use
+  - id: language-requests
+    label: uses language primarily for requests rather than for social interaction
+  - id: adjust-context
+    label: difficulty adjusting communication based on context or audience
+  - id: joint-attention
+    label: reduced joint attention (e.g., difficulty sharing focus or commenting on shared experiences)

@@ -1,0 +1,61 @@
+order: 310
+category: ASD
+id: asd-rrb
+title: "Restricted and Repetitive Behaviors"
+question: "Select all restricted and repetitive behavior patterns that apply."
+sentence_stem: "$name$ demonstrates pervasive atypical patterns in behaviors in the following areas"
+options:
+  - id: focused-interests
+    label: highly focused or intense interests
+  - id: need-predictability
+    label: need for predictability
+  - id: strong-interests
+    label: strong interests in [specify topic]
+  - id: repetitive-movements
+    label: repetitive movements (e.g., hand flapping, rocking)
+  - id: repetitive-speech
+    label: repetitive speech (e.g., scripting, echolalia, repeating phrases)
+  - id: sensory-sensitivity
+    label: sensitivity to environmental stimuli
+  - id: repetitive-objects
+    label: repetitive use of objects (e.g., lining up items, spinning objects, flipping items repeatedly)
+  - id: insistence-sameness
+    label: insistence on sameness
+  - id: strict-routines
+    label: strict adherence to routines
+  - id: change-distress
+    label: distress or difficulty coping with changes in schedule, transitions, or unexpected events
+  - id: rigid-thinking
+    label: rigid thinking patterns (e.g., difficulty with flexibility, "all or nothing" thinking)
+  - id: fixated-interests
+    label: highly restricted or fixated interests that are abnormal in intensity or focus
+  - id: preoccupation
+    label: strong preoccupation with specific topics, objects, or activities
+  - id: attention-shift
+    label: difficulty shifting attention away from preferred interests
+  - id: repetitive-play
+    label: use of repetitive play themes or limited imaginative play
+  - id: object-attachment
+    label: unusual attachment to objects (e.g., carrying specific items, distress if unavailable)
+  - id: ritualized-behavior
+    label: ritualized patterns of behavior (e.g., needing to complete tasks in a specific order)
+  - id: resistance-new
+    label: resistance to trying new activities, foods, or experiences
+  - id: sensory-sensitivities
+    label: sensory sensitivities (e.g., over- or under-reactivity to sounds, textures, lights, smells)
+  - id: sensory-seeking
+    label: seeking sensory input (e.g., touching objects excessively, seeking movement)
+  - id: visual-inspection
+    label: unusual visual inspection of objects (e.g., looking at items from specific angles, close to eyes)
+  - id: transition-preferred
+    label: difficulty transitioning away from preferred activities
+  - id: repetitive-body
+    label: repetitive body movements when excited, stressed, or overstimulated
+  - id: parts-fixation
+    label: fixation on parts of objects rather than whole (e.g., wheels of a toy instead of the toy itself)
+  - id: limited-interests
+    label: limited range of interests or activities
+  - id: repetitive-patterns
+    label: repetitive patterns in drawing, writing, or play
+  - id: predictability-routine
+    label: strong need for predictability and routine

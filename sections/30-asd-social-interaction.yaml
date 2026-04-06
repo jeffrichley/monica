@@ -1,0 +1,53 @@
+order: 300
+category: ASD
+id: asd-social-interaction
+title: "Social Interaction"
+question: "Select all atypical social interaction patterns that apply."
+sentence_stem: "$name$ demonstrates pervasive atypical patterns in social interactions in the following areas"
+options:
+  - id: initiating-conv
+    label: difficulty initiating and/or maintaining conversations
+  - id: nonverbal-comm
+    label: reduced use or understanding of nonverbal communication (e.g., eye contact, gestures)
+  - id: social-cues
+    label: challenges interpreting social cues or others' perspectives
+  - id: reciprocal-peers
+    label: limited reciprocal interaction with peers
+  - id: eye-contact
+    label: reduced eye contact/gestures
+  - id: limited-initiation
+    label: limited initiation of social interactions with peers or adults
+  - id: reduced-response
+    label: reduced response to social initiations (e.g., does not respond when name is called, ignores greetings)
+  - id: reciprocal-conv
+    label: difficulty engaging in reciprocal conversations (e.g., one-sided interactions, limited back-and-forth exchange)
+  - id: nonverbal-understanding
+    label: difficulty understanding and using nonverbal communication (e.g., facial expressions, gestures, body language)
+  - id: sharing-enjoyment
+    label: limited interest in sharing enjoyment, interests, or achievements with others
+  - id: peer-relationships
+    label: difficulty developing and maintaining peer relationships
+  - id: awkward-interactions
+    label: interactions may appear awkward, scripted, or overly formal
+  - id: social-norms
+    label: difficulty understanding social norms and expectations (e.g., personal space, turn-taking)
+  - id: others-perspectives
+    label: limited awareness of others' perspectives, emotions, or social cues
+  - id: unusual-approach
+    label: approaches others in an unusual or inappropriate manner
+  - id: limited-imitation
+    label: limited imitation of peers' behaviors or social actions
+  - id: emotional-reciprocity
+    label: reduced emotional reciprocity (e.g., limited response to others' emotions)
+  - id: tone-sarcasm
+    label: difficulty interpreting tone of voice, sarcasm, or humor
+  - id: parallel-play
+    label: engages in parallel play rather than interactive play
+  - id: joint-attention
+    label: limited or inconsistent response to joint attention (e.g., following a point, sharing focus on an object/event)
+  - id: talks-at-others
+    label: tendency to talk at others rather than with others
+  - id: prefers-adults
+    label: prefers interactions with adults over peers
+  - id: prefers-peers
+    label: prefers interactions with peers over adults

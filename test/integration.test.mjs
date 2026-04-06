@@ -34,10 +34,10 @@ test('dist/index.html exists after build', async () => {
   await assert.doesNotReject(fs.access(DIST_HTML));
 });
 
-test('built HTML contains 12 sections', async () => {
+test('built HTML contains 16 sections', async () => {
   const html = await fs.readFile(DIST_HTML, 'utf8');
   const sections = getSections(html);
-  assert.equal(sections.length, 12);
+  assert.equal(sections.length, 16);
 });
 
 test('all 9 SLD sections are present', async () => {
@@ -52,6 +52,28 @@ test('all 3 OHI sections are present', async () => {
   const sections = getSections(html);
   const ohi = sections.filter(s => s.category === 'OHI');
   assert.equal(ohi.length, 3);
+});
+
+test('all 4 ASD sections are present', async () => {
+  const html = await fs.readFile(DIST_HTML, 'utf8');
+  const sections = getSections(html);
+  const asd = sections.filter(s => s.category === 'ASD');
+  assert.equal(asd.length, 4);
+});
+
+test('ASD sections have expected ids', async () => {
+  const html = await fs.readFile(DIST_HTML, 'utf8');
+  const sections = getSections(html);
+  const ids = sections.filter(s => s.category === 'ASD').map(s => s.id);
+  assert.deepEqual(ids, ['asd-social-interaction', 'asd-rrb', 'asd-communication', 'asd-educational-impact']);
+});
+
+test('ASD sections all have $name$ in their stem', async () => {
+  const html = await fs.readFile(DIST_HTML, 'utf8');
+  const sections = getSections(html);
+  for (const sec of sections.filter(s => s.category === 'ASD')) {
+    assert.ok(sec.stem.includes('$name$'), `${sec.id} stem should contain $name$`);
+  }
 });
 
 test('ohi-impairment has 2 text fields (doctor, date)', async () => {
