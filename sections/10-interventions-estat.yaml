@@ -3,7 +3,7 @@ category: SLD
 id: interventions-estat
 title: "ESTAT / MTSS"
 question: "Select all ESTAT/MTSS supports that apply."
-sentence_stem: "ESTAT/MTSS supports have included"
+sentence_stem: ""
 options:
   - id: tiered-support
     label: tiered intervention support (Tier 1, Tier 2, Tier 3)

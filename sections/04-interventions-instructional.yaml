@@ -3,7 +3,7 @@ category: SLD
 id: interventions-instructional
 title: "Instructional Support"
 question: "Select all instructional support strategies that apply."
-sentence_stem: "Instructional support has included"
+sentence_stem: ""
 options:
   - id: small-group-instr
     label: small group instruction for reading and/or math

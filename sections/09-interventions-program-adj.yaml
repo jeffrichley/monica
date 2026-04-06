@@ -3,7 +3,7 @@ category: SLD
 id: interventions-program-adj
 title: "Program Adjustments"
 question: "Select all program adjustments that apply."
-sentence_stem: "Program adjustments have included"
+sentence_stem: ""
 options:
   - id: modified-assign
     label: modified assignments (reduced workload, simplified directions)

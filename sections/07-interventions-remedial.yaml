@@ -3,7 +3,7 @@ category: SLD
 id: interventions-remedial
 title: "Remedial Programs"
 question: "Select all remedial programs that apply."
-sentence_stem: "Remedial programs have included"
+sentence_stem: ""
 options:
   - id: reading-intervention
     label: participation in reading intervention programs (e.g., phonics-based instruction)

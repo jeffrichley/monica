@@ -3,7 +3,7 @@ category: SLD
 id: interventions-504
 title: "504 Plan"
 question: "Select all 504 plan accommodations that apply."
-sentence_stem: "The student's 504 plan has included"
+sentence_stem: ""
 options:
   - id: ext-time
     label: extended time on tests and assignments

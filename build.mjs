@@ -26,11 +26,11 @@ function normalizeSection(data, filename) {
     path.basename(filename, path.extname(filename)).replace(/[^a-zA-Z0-9_-]/g, "-");
   const title = data.title ?? data.heading ?? "Section";
   const question = data.question != null ? String(data.question).trim() : "";
+  // If sentence_stem is explicitly present in YAML (even ""), use it as-is and
+  // don't fall back to question — allows sections that output a bare list.
   const sentenceStem =
-    data.sentence_stem != null && String(data.sentence_stem).trim() !== ""
-      ? String(data.sentence_stem).trim()
-      : "";
-  const stemSource = sentenceStem || question;
+    data.sentence_stem != null ? String(data.sentence_stem).trim() : null;
+  const stemSource = sentenceStem !== null ? sentenceStem : question;
   const stem = trimSentenceStem(stemSource);
   const prompt = question || sentenceStem;
   const staticText = data.static_text ?? data.staticText ?? "";

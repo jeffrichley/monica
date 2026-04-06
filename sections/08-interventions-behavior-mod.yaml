@@ -3,7 +3,7 @@ category: SLD
 id: interventions-behavior-mod
 title: "Behavior Modifications"
 question: "Select all behavior modifications that apply."
-sentence_stem: "Behavior modifications have included"
+sentence_stem: ""
 options:
   - id: pos-reinforcement
     label: positive reinforcement for appropriate behaviors

@@ -3,7 +3,7 @@ category: SLD
 id: interventions-bip
 title: "Behavior Intervention Plan"
 question: "Select all BIP components that apply."
-sentence_stem: "The behavior intervention plan has included"
+sentence_stem: ""
 options:
   - id: daily-goals
     label: daily behavior goals with monitoring
