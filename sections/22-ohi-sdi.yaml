@@ -1,0 +1,59 @@
+order: 220
+category: OHI
+id: ohi-sdi
+title: "Need for Special Education"
+question: "Select all areas requiring specially designed instruction."
+sentence_stem: "The eligibility committee determined that $name$ needs specially designed instruction to address"
+options:
+  - id: sustained-attn
+    label: sustained attention
+  - id: on-task
+    label: on-task behavior
+  - id: task-initiation
+    label: task initiation without adult prompting
+  - id: task-persistence
+    label: task persistence
+  - id: completion
+    label: completion of assignments
+  - id: time-mgmt
+    label: time management
+  - id: prioritizing
+    label: prioritizing tasks
+  - id: workload
+    label: managing workload
+  - id: multi-step-dir
+    label: following multi-step directions
+  - id: monitoring-work
+    label: monitoring and checking work for accuracy
+  - id: careless-errors
+    label: reducing careless errors due to inattention or impulsivity
+  - id: note-taking
+    label: note-taking and recording assignments accurately
+  - id: transitioning
+    label: transitioning between tasks and activities
+  - id: flexible-thinking
+    label: flexible thinking
+  - id: adapting-routine
+    label: adapting to changes in routine
+  - id: goal-setting
+    label: goal setting and self-monitoring progress
+  - id: coping-strategies
+    label: use of coping strategies to manage frustration or overwhelm
+  - id: emotional-reg
+    label: emotional regulation during challenging tasks
+  - id: help-seeking
+    label: appropriate help-seeking behaviors
+  - id: independence
+    label: independence in completing classroom routines
+  - id: generalization
+    label: generalization of skills across settings
+  - id: stamina
+    label: increased academic stamina and endurance for tasks
+  - id: avoidance
+    label: reduction of avoidance behaviors or work refusal
+  - id: engagement
+    label: engagement and participation in instruction
+  - id: problem-solving
+    label: development of problem-solving strategies
+  - id: redirection-response
+    label: improved response to redirection and feedback

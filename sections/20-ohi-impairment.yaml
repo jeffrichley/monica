@@ -1,0 +1,26 @@
+order: 200
+category: OHI
+id: ohi-impairment
+title: "Impairment / Diagnosis"
+question: "Select the health condition(s) that apply."
+sentence_stem: "$name$ has a medical diagnosis of $list$, by $doctor$ on $date$"
+text_fields:
+  - id: doctor
+    label: Doctor name
+    placeholder: "e.g. Dr. Smith"
+  - id: date
+    label: Date of diagnosis
+    placeholder: "e.g. March 15, 2024"
+options:
+  - id: adhd
+    label: Attention-Deficit/Hyperactivity Disorder (ADHD)
+  - id: asthma
+    label: asthma (chronic)
+  - id: anxiety
+    label: anxiety disorder
+  - id: diabetes
+    label: diabetes (Type 1 or Type 2)
+  - id: epilepsy
+    label: epilepsy/seizure disorder
+  - id: migraines
+    label: chronic migraines

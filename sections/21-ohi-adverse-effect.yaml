@@ -1,0 +1,41 @@
+order: 210
+category: OHI
+id: ohi-adverse-effect
+title: "Adverse Effect"
+question: "Select all areas of adverse educational impact."
+sentence_stem: "$name$ demonstrates an impact on educational performance in the following areas"
+options:
+  - id: sustain-attn
+    label: difficulty sustaining attention during whole-group and independent instruction
+  - id: task-completion
+    label: reduced task completion and productivity
+  - id: inconsistent-perf
+    label: inconsistent academic performance
+  - id: multi-step
+    label: difficulty following multi-step directions
+  - id: retaining-info
+    label: difficulty retaining information
+  - id: organization
+    label: challenges with organization (e.g., losing materials, disorganized work)
+  - id: exec-function
+    label: impaired executive functioning (e.g., planning, initiating, and monitoring work)
+  - id: distractibility
+    label: increased distractibility from environmental stimuli or internal factors
+  - id: movement
+    label: difficulty remaining seated, excessive movement, or restlessness
+  - id: impulsivity
+    label: impulsivity impacting accuracy and behavior
+  - id: redirection
+    label: frequent need for redirection, prompts, or adult support
+  - id: transitions
+    label: difficulty with transitions between tasks or activities
+  - id: participation
+    label: reduced participation in classroom activities or discussions
+  - id: absences
+    label: missed instructional time due to health-related absences
+  - id: fatigue
+    label: fatigue or low stamina impacting engagement and endurance
+  - id: peer-interaction
+    label: difficulty with peer interactions or social participation
+  - id: emotional-dysreg
+    label: emotional dysregulation affecting classroom behavior and learning

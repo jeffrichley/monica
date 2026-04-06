@@ -47,7 +47,15 @@ function normalizeSection(data, filename) {
   const categoryRaw = data.category != null ? String(data.category).trim() : "";
   const category = categoryRaw || "General";
 
-  return { id, title, prompt, stem, static_text: staticText, options, order, category };
+  const textFields = Array.isArray(data.text_fields)
+    ? data.text_fields.map((f) => ({
+        id: String(f.id),
+        label: String(f.label ?? f.id).trim(),
+        placeholder: String(f.placeholder ?? "").trim(),
+      }))
+    : [];
+
+  return { id, title, prompt, stem, static_text: staticText, options, order, category, text_fields: textFields };
 }
 
 function buildPage(sections) {
@@ -339,6 +347,33 @@ function buildPage(sections) {
       font-size: 0.88rem;
     }
     .form-actions { margin-top: 0.5rem; }
+    .text-fields {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+    .text-field-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    .text-field-row > span {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+    }
+    .text-field-input {
+      padding: 0.45rem 0.65rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: rgba(0,0,0,0.25);
+      color: var(--text);
+      font: inherit;
+      font-size: 0.95rem;
+      width: 100%;
+    }
     footer {
       text-align: center;
       padding: 2rem 1rem;
@@ -620,15 +655,39 @@ function buildPage(sections) {
     return head + ", and " + labels[n - 1];
   }
 
-  function buildText(sec, selectedIds) {
+  function getTextFieldValues(sectionId) {
+    var vals = {};
+    root.querySelectorAll('input.text-field-input[data-field-section="' + sectionId + '"]').forEach(function (inp) {
+      vals[inp.dataset.fieldId] = inp.value.trim();
+    });
+    return vals;
+  }
+
+  function buildText(sec, selectedIds, fieldValues) {
     var labels = selectedLabels(sec, selectedIds);
     var list = formatList(labels);
     var stem = String(sec.stem || "").trimEnd();
     var sentence;
-    if (!stem && !list) sentence = "";
-    else if (!stem && list) sentence = list + ".";
-    else if (stem && !list) sentence = stem + ".";
-    else sentence = stem + " " + list + ".";
+    // If stem contains $list$, substitute inline; otherwise append at end.
+    if (stem.indexOf("$list$") >= 0) {
+      sentence = stem.replace(/\$list\$/g, list) + ".";
+    } else if (!stem && !list) {
+      sentence = "";
+    } else if (!stem && list) {
+      sentence = list + ".";
+    } else if (stem && !list) {
+      sentence = stem + ".";
+    } else {
+      sentence = stem + " " + list + ".";
+    }
+
+    // Substitute text field values ($fieldid$).
+    if (fieldValues) {
+      Object.keys(fieldValues).forEach(function (fid) {
+        var val = fieldValues[fid] || ("$" + fid + "$");
+        sentence = sentence.split("$" + fid + "$").join(val);
+      });
+    }
 
     var prefix = String(sec.static_text || "").trimEnd();
     var out;
@@ -651,7 +710,7 @@ function buildPage(sections) {
     if (!sec) return;
     var pre = document.getElementById("out-" + sectionId);
     if (!pre) return;
-    pre.textContent = buildText(sec, selectedIdsForSection(sectionId));
+    pre.textContent = buildText(sec, selectedIdsForSection(sectionId), getTextFieldValues(sectionId));
   }
 
   function copyText(btn, text) {
@@ -832,6 +891,28 @@ function buildPage(sections) {
         fs.appendChild(label);
       }
       sectionEl.appendChild(fs);
+
+      if (sec.text_fields && sec.text_fields.length) {
+        var tfWrap = document.createElement("div");
+        tfWrap.className = "text-fields";
+        sec.text_fields.forEach(function (tf) {
+          var row = document.createElement("div");
+          row.className = "text-field-row";
+          var lbl = document.createElement("span");
+          lbl.textContent = tf.label;
+          var inp = document.createElement("input");
+          inp.type = "text";
+          inp.className = "text-field-input";
+          inp.placeholder = tf.placeholder || "";
+          inp.dataset.fieldSection = sec.id;
+          inp.dataset.fieldId = tf.id;
+          inp.addEventListener("input", function () { updateSection(sec.id); });
+          row.appendChild(lbl);
+          row.appendChild(inp);
+          tfWrap.appendChild(row);
+        });
+        sectionEl.appendChild(tfWrap);
+      }
 
       var outWrap = document.createElement("div");
       outWrap.className = "output-block";
