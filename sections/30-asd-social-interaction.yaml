@@ -3,7 +3,7 @@ category: ASD
 id: asd-social-interaction
 title: "Social Interaction"
 question: "Select all atypical social interaction patterns that apply."
-sentence_stem: "$name$ demonstrates pervasive atypical patterns in social interactions in the following areas"
+sentence_stem: "$name$ demonstrates pervasive atypical patterns in social interactions in the following areas:"
 options:
   - id: initiating-conv
     label: difficulty initiating and/or maintaining conversations

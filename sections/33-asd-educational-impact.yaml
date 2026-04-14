@@ -3,7 +3,7 @@ category: ASD
 id: asd-educational-impact
 title: "Educational Impact"
 question: "Select all areas impacting educational performance."
-sentence_stem: "$name$ has difficulties in the following areas, which impact educational performance"
+sentence_stem: "$name$ has difficulties in the following areas, which impact educational performance:"
 options:
   - id: exec-functioning
     label: executive functioning skills (organization, planning, task initiation, and work completion)

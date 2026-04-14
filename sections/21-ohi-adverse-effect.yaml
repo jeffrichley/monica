@@ -3,7 +3,7 @@ category: OHI
 id: ohi-adverse-effect
 title: "Adverse Effect"
 question: "Select all areas of adverse educational impact."
-sentence_stem: "$name$ demonstrates an impact on educational performance in the following areas"
+sentence_stem: "$name$ demonstrates an impact on educational performance in the following areas:"
 options:
   - id: sustain-attn
     label: difficulty sustaining attention during whole-group and independent instruction

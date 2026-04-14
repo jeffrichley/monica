@@ -3,7 +3,7 @@ category: ASD
 id: asd-communication
 title: "Communication"
 question: "Select all atypical communication patterns that apply."
-sentence_stem: "$name$ demonstrates pervasive atypical patterns in communication in the following areas"
+sentence_stem: "$name$ demonstrates pervasive atypical patterns in communication in the following areas:"
 options:
   - id: delayed-language
     label: delayed language development

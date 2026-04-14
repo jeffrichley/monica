@@ -3,7 +3,7 @@ category: ASD
 id: asd-rrb
 title: "Restricted and Repetitive Behaviors"
 question: "Select all restricted and repetitive behavior patterns that apply."
-sentence_stem: "$name$ demonstrates pervasive atypical patterns in behaviors in the following areas"
+sentence_stem: "$name$ demonstrates pervasive atypical patterns in behaviors in the following areas:"
 options:
   - id: focused-interests
     label: highly focused or intense interests
